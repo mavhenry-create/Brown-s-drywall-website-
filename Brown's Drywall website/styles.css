@@ -1,0 +1,280 @@
+#logo-image {
+    /* don't force a large fixed width that can break layouts */
+    max-width: 300px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align:center;
+    background-color: black;
+
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#information {
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas: "name address hours service-area social-media";
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#address {
+    font-weight: bold;
+    grid-area: address;
+    text-align: left;
+    position: relative;
+    top: 19px;
+}
+
+#hours {
+    grid-area: hours;
+    text-align: left;
+}
+
+#service-area {
+    grid-area: service-area;
+    text-align: left;
+}
+
+#social-media {
+    grid-area: social-media;
+    text-align: left;
+}
+
+#name {
+    font-size: 18px;
+    font-weight: bold;
+    grid-area: name;
+    text-align: left;
+} 
+
+#content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+
+#address,
+#hours,
+#service-area,
+#social-media {
+    text-align: left;
+    margin-top: 0;
+}
+
+#nav-bar {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 300px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+#team-photo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#company-history {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#our-mission {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#our-team {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduction {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services-overview {
+    width: 14.5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left
+}
+#services-overview h2 {
+    text-align: center;
+}
+
+#why-choose-us {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 80%
+}
+
+#contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  margin-bottom: 15px;
+  color: black; 
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #800000;
+}
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "day hours";
+  gap: 10px;
+}
+
+.day {
+    grid-area: day;
+}
+
+.hours {
+    grid-area: hours;
+}
