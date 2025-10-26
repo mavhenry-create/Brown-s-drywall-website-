@@ -1,221 +1,230 @@
 #logo-image {
-    /* don't force a large fixed width that can break layouts */
-    max-width: 300px;
-    height: 100px;
+  /* don't force a large fixed width that can break layouts */
+  max-width: 300px;
+  height: 100px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: gray;
+  color: gray;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align:center;
-    background-color: black;
-
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #information {
-    gap: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(5,minmax(250px, 1fr));
-    grid-template-rows: auto;
-    grid-template-areas: "name address hours service-area social-media";
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    
+  gap: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: "name address hours service-area social-media";
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
 }
 
 li {
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 5px;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 #address {
-    font-weight: bold;
-    grid-area: address;
-    text-align: left;
-    position: relative;
-    top: 19px;
+  font-weight: bold;
+  grid-area: address;
+  text-align: left;
+  position: relative;
+  top: 19px;
 }
 
 #hours {
-    grid-area: hours;
-    text-align: left;
+  grid-area: hours;
+  text-align: left;
 }
 
 #service-area {
-    grid-area: service-area;
-    text-align: left;
+  grid-area: service-area;
+  text-align: left;
 }
 
 #social-media {
-    grid-area: social-media;
-    text-align: left;
+  grid-area: social-media;
+  text-align: left;
 }
 
 #name {
-    font-size: 18px;
-    font-weight: bold;
-    grid-area: name;
-    text-align: left;
-} 
+  font-size: 18px;
+  font-weight: bold;
+  grid-area: name;
+  text-align: left;
+}
 
 #content {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  height: auto;
 }
 
 #address,
 #hours,
 #service-area,
 #social-media {
-    text-align: left;
-    margin-top: 0;
+  text-align: left;
+  margin-top: 0;
 }
 
 #nav-bar {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: black;
-    font-size: 1.2rem;
+  margin: 0 15px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 300px));
-    gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 300px));
+  gap: 20px;
+  justify-content: center;
 }
 
 .gallery-grid img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 
 figcaption {
-    text-align: center;
-    font-style: italic;
-    margin-top: 8px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
 }
 
 #team-photo img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #company-history {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #our-mission {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #our-team {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #introduction {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#introduction p {
+  font-size: 1.8rem;
 }
 
 #services-overview {
-    width: 14.5%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:left
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
 }
 #services-overview h2 {
-    text-align: center;
+  text-align: center;
 }
 
 #why-choose-us {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#why-choose-us p,
+h2 {
+  font-size: 1.6rem;
 }
 
 #intro-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    height: auto;
-    margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 hr {
-    width: 80%
+  width: 80%;
 }
 
 #contact {
@@ -231,7 +240,8 @@ hr {
   margin-top: 20px;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
@@ -240,11 +250,12 @@ hr {
 .contact-info h3,
 .contact-form h3 {
   margin-bottom: 15px;
-  color: black; 
+  color: black;
 }
 
-input, textarea {
-  width: 100%;
+input,
+textarea {
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -263,18 +274,296 @@ input[type="submit"]:hover {
   background-color: #800000;
 }
 
-.inner-grid {
+.hours-lists {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "day hours";
-  gap: 10px;
+  grid-template-columns: auto 1fr;
+  gap: 6px 20px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .day {
-    grid-area: day;
+  text-align: left;
+  padding-right: 8px;
 }
 
 .hours {
-    grid-area: hours;
+  text-align: right;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+#contact-us p {
+  font-size: 1.4rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  word-spacing: normal;
+}
+
+#services-motto h2 {
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+#services-motto p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#services-details ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive: smaller screens */
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 12px 8px;
+  }
+
+  /* Stack the information area vertically */
+  #information {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "address"
+      "hours"
+      "service-area"
+      "social-media";
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  /* Make content blocks full width-ish for mobile */
+  #content,
+  #company-history,
+  #our-mission,
+  #our-team,
+  #introduction,
+  #why-choose-us,
+  #services-overview {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Nav becomes horizontally scrollable if it overflows */
+  #nav-bar {
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1rem;
+    padding: 6px 8px;
+  }
+
+  /* Gallery and images scale down */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .gallery-grid img {
+    height: 140px;
+  }
+
+  /* Hours: stack day and time on small screens and keep times contained */
+  .hours-lists,
+  .hours-list {
+    grid-template-columns: 1fr;
+    gap: 6px 10px;
+  }
+  .day {
+    text-align: left;
+  }
+  .hours {
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+
+  /* Contact grid stacks into a single column */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  /* Make intro/team images responsive */
+  #intro-image,
+  #team-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Misc adjustments */
+  hr {
+    width: 95%;
+  }
+
+  /* Footer information section */
+  footer #information {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "address"
+      "hours"
+      "service-area"
+      "social-media";
+    width: 95%;
+    height: auto;
+    gap: 15px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  footer #information > div {
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #content {
+    padding: max(10px, 2%);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust base font size for tablet */
+  body {
+    font-size: 16px;
+  }
+
+  /* Optimize information grid for tablet */
+  #information {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name address hours"
+      "service-area social-media .";
+    width: 90%;
+    height: auto;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  /* Adjust content widths for tablet */
+  #content,
+  #company-history,
+  #our-mission,
+  #our-team,
+  #introduction,
+  #why-choose-us {
+    width: 85%;
+  }
+
+  /* Adjust services overview for tablet */
+  #services-overview {
+    width: 25%;
+    font-size: 1.2rem;
+  }
+
+  /* Optimize gallery grid for tablet */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  /* Adjust font sizes for readability */
+  #introduction p {
+    font-size: 1.6rem;
+  }
+
+  #why-choose-us p,
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  #services-motto h2 {
+    font-size: 1.3rem;
+  }
+
+  #services-motto p {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  /* Adjust contact section for tablet */
+  #contact {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .contact-grid {
+    gap: 30px;
+  }
+
+  /* Adjust contact text for tablet */
+  #contact-us p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+
+  /* Service details layout for tablet */
+  #services-details ul {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    gap: 15px 25px;
+  }
+
+  /* Footer information for tablet */
+  footer #information {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name address hours"
+      "service-area social-media .";
+    width: 90%;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  /* Adjust images for tablet */
+  #intro-image,
+  #team-photo img {
+    max-width: 500px;
+  }
+
+  /* Navigation adjustments */
+  #nav-bar {
+    width: 90%;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    margin: 0 12px;
+  }
+}
+
