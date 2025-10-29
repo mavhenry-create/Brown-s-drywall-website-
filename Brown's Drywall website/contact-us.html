@@ -99,8 +99,17 @@
           <!--Right column - contact form-->
           <section class="contact-form">
             <h3>Get in Touch</h3>
-            <form id="contact-form" action="#" method="post">
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="post"
+            >
               <label for="name">Name:</label><br />
+              <input
+                type="hidden"
+                name="access_key"
+                value="f52f96f2-d560-4bdb-aad1-788650a4d03a"
+              />
               <input
                 type="text"
                 id="name"

@@ -20,10 +20,14 @@ body {
   box-sizing: border-box;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color: white;
+  background-image: url('images/Logo side.jpg'), url('images/Logo side - Copy.jpg');
+  background-position: left center, right center;
+  background-repeat: no-repeat no-repeat;
+  background-size: 200px 100%, 200px 100%;
 }
 
-header {
+#logo-header {
   background-color: #f8f8f8;
   padding: 10px 0;
   text-align: center;
@@ -34,19 +38,15 @@ header {
   z-index: 1000;
 }
 
+
+
 #information {
-  gap: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(250px, 1fr));
-  grid-template-rows: auto;
-  grid-template-areas: "name address hours service-area social-media";
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
+ display: inline-flex
+
 }
+
+
+
 
 li {
   list-style-type: none;
@@ -58,6 +58,7 @@ li {
   font-weight: bold;
   grid-area: address;
   text-align: left;
+  padding-left: 10px;
   position: relative;
   top: 19px;
 }
@@ -92,6 +93,9 @@ li {
   margin-bottom: 20px;
   background-color: white;
   height: auto;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  
 }
 
 #address,
@@ -328,8 +332,8 @@ input[type="submit"]:hover {
   margin-right: auto;
 }
 
-/* Responsive: smaller screens */
-@media screen and (min-width: 420px) and (max-width: 768px) {
+/* Small screens and mobile devices */
+@media screen and (max-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -567,3 +571,52 @@ input[type="submit"]:hover {
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in-on-load {
+  animation: fadeIn 1s ease-in forwards; /* Fades in over 1s, stays visible */
+}
+
+.fade-out-then-hide {
+  animation: fadeOut 2s ease-out forwards; /* Fades out over 2s, stays invisible */
+}
+
+.pulse-fade {
+  animation: pulseFade 3s infinite alternate ease-in-out;
+}
+
+@keyframes pulseFade {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+#side image1 {
+  position: absolute;
+  display: flex;
+  align-items: left;
+  float: left;
+  left: 50%;
+}
