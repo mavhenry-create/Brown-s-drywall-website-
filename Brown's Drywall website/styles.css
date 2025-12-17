@@ -1,5 +1,4 @@
 #logo-image {
-  /* don't force a large fixed width that can break layouts */
   max-width: 300px;
   height: 100px;
 }
@@ -14,7 +13,6 @@ a:hover {
 }
 
 :root {
-  /* Fluid typography variables */
   --fluid-min-width: 320;
   --fluid-max-width: 1200;
   --fluid-min-size: 16;
@@ -22,7 +20,6 @@ a:hover {
   --fluid-min-header: 24;
   --fluid-max-header: 32;
 
-  /* Calculate fluid font sizes */
   --fluid-screen: 100vw;
   --fluid-bp: calc(
     (var(--fluid-screen) - var(--fluid-min-width) * 1px) /
@@ -30,7 +27,6 @@ a:hover {
   );
 }
 
-/* Base body styles with fluid typography */
 body {
   font-family: Arial, sans-serif;
   margin: auto;
@@ -38,7 +34,7 @@ body {
   box-sizing: border-box;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color: rgb(255, 253, 253);
   font-size: clamp(
     var(--fluid-min-size) * 1px,
     calc(
@@ -78,11 +74,12 @@ body::after {
   background-color: #f8f8f8;
   padding: 10px 0;
   text-align: center;
-  width: 100%;
+  width: 82%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  left: 170px;
 }
 
 #information {
@@ -247,6 +244,12 @@ figcaption {
 }
 #services-overview h2 {
   text-align: center;
+}
+
+#services-overview ul {
+  list-style-type: disc;
+  padding-left: 75px;
+  text-align: left;
 }
 
 #why-choose-us {
